@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
+    --clr-light: rgba(255, 255, 255, 0.863);
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #049931;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -475,4 +475,12 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* github and website links for portfolio item */
+
+.project-links {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;  
 }
