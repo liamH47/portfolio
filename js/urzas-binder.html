@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liam's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <!-- <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li> -->
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Urza's Binder</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">An MtG card organizer</p>
+            <img src="img/urzasportfolioscreenshot.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Urza's binder is a digital organizational tool for Magic: The Gathering cards built with a React.js frontend on a Rails API.</p>
+            <img src="img/urzas-binder-2.png" alt="">
+            <p>As someone who has many binders full of Magic cards, I have always found them lacking in flexibility. The idea behind Urza's Binder was to create a platform where a user can organize their cards by adding descriptive tags to them.  </p>
+            <p>This was my first project with React.js, and the experience of developing this taught me a lot.  React's modular components and state management were a huge eye-opener as someone who had only experimented with vanilla Javascript until that point. It's safe to say I was pretty hooked on React after my experience working on Urza's Binder.</p>
+        </div>
+
+ 
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <a class="footer__link" href='https://www.youtube.com/watch?v=fg_N8dS-1Z0' >
+                <p>Demo Video
+                    <i class="fab fa-youtube-square"></i>
+                </p>
+            </a>
+            <a class="footer__link" href='https://github.com/liamH47/urzas-binder-frontend' >
+                <p>React.js frontend
+                    <i class="fab fa-github"></i>
+                </p>
+            </a>
+            <a class="footer__link" href="https://github.com/liamH47/urzas-binder-backend" >
+                <p>Rails API
+                    <i class="fab fa-github"></i>
+                </p>
+            </a>
+            <!-- <ul class="social-list">
+                
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/liamH47/urzas-binder-frontend" target="_blank">
+                        <p>React.js frontend
+                            <i class="fab fa-github"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/liamH47/urzas-binder-backend" target="_blank">
+                        <p>Rails API
+                            <i class="fab fa-github"></i>
+                        </p>
+                    </a>
+                </li>
+            </ul> -->
+        </footer>
+     
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
