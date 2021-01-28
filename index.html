@@ -1,37 +1,133 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liam's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
-You can use the [editor on GitHub](https://github.com/liamH47/portfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <!-- <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li> -->
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, my name is <strong>Liam Hanafee-Areces</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">full stack web developer</p>
+            <img src="img/linkedInPic.jpeg" alt="Liam's LinkedIn Picture" class="intro__img">
+        </section>
+        
+        
 
-### Markdown
+        <!-- <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                
+                <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> 
+            </div> 
+            
+            <a href="#work" class="btn">My Work</a>
+        </section> -->
+        
+        
+        
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Developer based out of NYC</p>
+           
+           <div class="about-me__body">
+               <p>Experienced in Ruby on Rails and JavaScript based programming and a background in hospitality. I possess strong skills in communication and creative problem-solving in high pressure, high volume work environments. I am seeking a position as a software engineer that will allow me to improve people’s quality of life through technology such as modernizing our unemployment systems so that people receive essential benefits in a timely manner.</p>
+               <!-- <p>If I'm not coding, I am probably relaxing with my wife and my cat or catching up on some videogames.  I have a lifelong love of all things Nintendo, Magic: The Gathering, and more!</p> -->
+           </div>
+           
+           <img src="img/forest.jpg" class="about-me__img">
+        </section>
+        
+    
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="urzas-binder.html" class="portfolio__item">
+                    <img src="img/urzas-binder-4-1.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="tendr.html" class="portfolio__item">
+                    <img src="img/tendr-drink-closeup.png" alt="negroni" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="my-poke-party.html" class="portfolio__item">
+                    <img src="img/poke-square.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <!-- <a href="monorail.html" class="portfolio__item">
+                    <img src="img/simpsons-3.png" alt="" class="portfolio__img">
+                </a> -->
+                
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            </div>
+        </section>
+        
+        
 
-```markdown
-Syntax highlighted code block
+        <footer class="footer">
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/liamH47/portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+            <a href="mailto:liamhanafee@gmail.com" class="footer__link">liamhanafee@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/liam-hanafee-areces/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/liamH47">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>port.github.com/contact) and we’ll help you sort it out.
