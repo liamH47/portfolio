@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liam's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <!-- <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li> -->
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+<!-- change img src after copying template -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                welcome to <strong>paLit</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Color Palette Creator</p>
+            <img src="img/palitLogo.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>paLit allows a user to create custom color palettes for their websites. Simply create a palette, and click on a color to save it's Hex, RGB, or ARGB code to your clipboard. Then simply add it into your project.</p>
+            <!-- <iframe width="1000" height="500" allow="fullscreen" src='https://www.youtube.com/embed/mG-kLeF6PcE'></iframe> -->
+            <img src="img/palitForm.png" alt="">
+            <p>I really enjoyed working on paLit. It is a tool that I can use to help with all of my future projects, and I got to use a lot of libraries for the first time, including Chroma-js, Material UI, and react-sortable-hoc. </p>
+           
+        </div>
+
+ 
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <a class="footer__link" href='https://www.youtube.com/embed/mG-kLeF6PcE' >
+                <p>Demo Video
+                    <i class="fab fa-youtube-square"></i>
+                </p>
+            </a>
+            <a class="footer__link" href="https://github.com/liamH47/tendr-react-frontend" >
+                <p>React.js frontend
+                    <i class="fab fa-github"></i>
+                </p>
+            </a>
+            <a class="footer__link" href="https://github.com/liamH47/tendr-railsAPI" >
+                <p>Rails API
+                    <i class="fab fa-github"></i>
+                </p>
+            </a>
+
+
+        </footer>
+     
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
